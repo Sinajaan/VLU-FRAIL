@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b33">
+<title>VLU-FRAIL | Research Calculator</title>
+<meta name="description" content="VLU-FRAIL: an exploratory research calculator for venous leg ulcer healing and recurrence.">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#071b33;color:#f7fbff;font-family:system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh;display:grid;place-items:center;padding:24px}.wrap{width:min(100%,440px);text-align:center}.mark{width:86px;height:86px;margin:0 auto 22px;border-radius:23px;background:linear-gradient(145deg,#103b68,#086b79);display:grid;place-items:center;box-shadow:0 14px 45px #0005}.mark svg{width:54px;height:54px}h1{font-size:35px;letter-spacing:1px;margin:0 0 9px}.eyebrow{font-size:11px;letter-spacing:2.6px;color:#7edddc;font-weight:750;margin-bottom:12px}.subtitle{color:#c5d5df;font-size:15px;line-height:1.65;margin:0 auto 25px;max-width:340px}.panel{background:#102b45;border:1px solid #28475d;border-radius:22px;padding:24px 20px;text-align:left}.panel h2{font-size:17px;margin:0 0 12px}.panel p{font-size:13px;color:#c0d2dc;line-height:1.65;margin:0 0 17px}.button{display:block;text-align:center;text-decoration:none;border-radius:12px;padding:15px 12px;font-size:15px;font-weight:750;margin-top:11px;border:1px solid #3e6277;color:#f4ffff;background:#173a54;cursor:pointer;width:100%}.primary{background:#23c5bf;border-color:#23c5bf;color:#052637}.note{font-size:12px;color:#9fb8c6;line-height:1.6;margin:17px 3px 0}.footer{font-size:11px;color:#88a6b7;margin-top:24px;line-height:1.7}
+</style>
+</head>
+<body><main class="wrap">
+<div class="mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="#8af6ef" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12h16v12h12v16H40v12H24V40H12V24h12z"/><path d="M16 47c9-9 21-12 33-8" stroke="#fff" stroke-width="2.5"/></svg></div>
+<div class="eyebrow">PUBLIC RESEARCH · VERSION 4.2</div>
+<h1>VLU-FRAIL</h1>
+<p class="subtitle">Venous Leg Ulcer Healing &amp; Recurrence<br>Exploratory Research Calculator</p>
+<section class="panel"><h2>Research tool for clinicians</h2><p>Explore published group-average healing estimates, an unvalidated frailty-adjusted synthesis, recurrence estimates, and wound-response tracking. Not a validated individual-risk prediction model.</p>
+<a class="button primary" href="https://sinajaan.github.io/VLU-FRAIL/">Open Calculator</a>
+<a class="button" href="./VLU-FRAIL_v1.0.0.APK" download>Download Android APK</a>
+<button class="button" id="share" type="button">Share with a Colleague</button>
+<p class="note">Android download will work once the APK file is uploaded alongside this page. Android may ask you to approve installation from this source.</p></section>
+<p class="footer">VLU-FRAIL · Public Research Beta<br>For research and educational use; not a substitute for clinical judgment.</p>
+</main><script>document.getElementById('share').addEventListener('click',async()=>{const data={title:'VLU-FRAIL',text:'VLU-FRAIL research calculator and Android download',url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{try{await navigator.clipboard.writeText(location.href);alert('Page link copied')}catch(e){prompt('Copy this link:',location.href)}}});</script>
+</body></html>
